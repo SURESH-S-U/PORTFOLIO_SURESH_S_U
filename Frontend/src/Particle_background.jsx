@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from "react";  // This code is for particle Background
 import Particles, { initParticlesEngine } from "@tsparticles/react";
-import { loadSlim } from "@tsparticles/slim"; 
+import { loadSlim } from "@tsparticles/slim";
 
 const Particle_background = () => {
   const [init, setInit] = useState(false);
