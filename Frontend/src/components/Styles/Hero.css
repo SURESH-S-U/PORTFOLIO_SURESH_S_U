@@ -1,8 +1,38 @@
 *{
     color: white;
 }
-
-.hero-container{
-    width: 20%;
-    height: 20%;
-}
+.hero-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .hero-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .hero-subtitle {
+    display: inline-block; /* Prevent shrinking */
+    justify-content: start;
+    min-width: 300px; /* Set a minimum width to avoid shifting */
+    text-align: center; /* Keep the text centered */
+  }
+  
+  .slide-in-text {
+    display: inline-block;
+    animation: slide-in 1s ease-in-out;
+  }
+  
+  @keyframes slide-in {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  

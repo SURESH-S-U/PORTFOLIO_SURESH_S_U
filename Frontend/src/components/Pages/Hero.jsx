@@ -5,18 +5,21 @@ import "../Styles/Hero.css";
 const Hero = () => {
   return (
     <div className="hero-wrapper"> {/* Parent Wrapper */}
-      <div className="hero-container">  
+      <div className="hero-container">
         <h4 className="hero-title">SURESH S U</h4>
         <h1 className="hero-subtitle">
-          Developer <br /> + &nbsp;
-          <Typewriter
-            words={["Web Developer", "AI Engineer", "Designer", "Engineer"]}
-            loop={Infinity}
-            cursor
-            typeSpeed={100}
-            deleteSpeed={50}
-            delaySpeed={1000}
-          />
+          Web Developer
+          <div className="loop">
+            <Typewriter
+              words={["AI Engineer", "UI&UX Designer", "DATA Engineer"]}
+              loop={Infinity}
+              cursor
+              typeSpeed={100}
+              deleteSpeed={50}
+              delaySpeed={1000}
+              className="slide-in-text"
+            />
+          </div>
         </h1>
       </div>
     </div>
